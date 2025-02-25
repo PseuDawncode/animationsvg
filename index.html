@@ -14,12 +14,23 @@
     <!--Navbar Section-->
     <nav class="navbar">
         <div class="navbar__container">
-            <h1 id="navbar__logo">David's Instruments</h1>
+            <div class="logo__wrapper">
+                <svg class="piano-logo" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="50" height="30" rx="8" ry="8" fill="#483C32" />
+                    <rect class="key-white" x="2" y="10" width="12" height="20"/>
+                    <rect class="key-white" x="15" y="10" width="12" height="20"/>
+                    <rect class="key-white" x="28" y="10" width="12" height="20"/>
+                    <rect class="key-black" x="10" y="10" width="8" height="12"/>
+                    <rect class="key-black" x="24" y="10" width="8" height="12"/>
+                </svg>
+                <h1 id="navbar__logo">David & The Music</h1>
+            </div>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
+        
             <ul class="navbar__menu">
                 <li class="navbar__item">
                     <a href="/" class="navbar__links">
@@ -65,7 +76,10 @@
  
  <!--Services Section-->
  <div class="services">
-    <h1 class="animate__animated animate__fadeInLeft">What playing instrument you are looking for?</h1>
+    <h1>What playing instruments you are looking for?</h1>
+    <marquee width="100%" direction="left" behavior="scroll" scrollamount="4">
+        <p id="text__infinite">🎼 Join Our Community of Learners and Start Your Journey to become a great musician Today! 🔥 Gain Skills, Share Experiences, and Achieve Your Goals!</p>
+    </marquee>
     <div class="services__container">
         <div class="services__card">
             <h2>Vintage Piano</h2>
@@ -73,7 +87,7 @@
             <button>Get Yours</button>
         </div>
         <div class="services__card">
-            <h2>Guitar</h2>
+            <h2>Guitar <span class="sale-tag">Sale!</span></h2>
             <p>10,000 - 25,000 sek</p>
             <button>Get Yours</button>
         </div>

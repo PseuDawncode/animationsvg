@@ -42,6 +42,49 @@ body{
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+    margin-left: 0.5rem;
+}
+
+.piano-logo {
+    width: 150px;
+    height: auto;
+    transition: fill 0.3s ease;
+    margin-top: 18px;
+    margin-right: -15%;
+}
+
+.key-white {
+    fill: 	#F0EAD6;
+    stroke: black;
+    stroke-width: 0.5;
+}
+
+.key-black {
+    fill: black;
+}
+
+
+.marquee {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0, .15);
+    color: #ffffff;
+    padding: 10px;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 10s linear infinite;
+}
+
+#text__infinite{
+    color: #F0EAD6;
+}
+
+.logo__wrapper{
+    display: flex;
+    align-items: center;
+    gap: 0;
 }
 
 .fa-caret-down{
@@ -85,8 +128,8 @@ body{
     padding: 10px 0;
     list-style: none;
     z-index: 1000;
-    max-height: 250px; /* Limits the height */
-    overflow-y: auto; /* Enables scrolling */
+    max-height: 250px;
+    overflow-y: auto;
 }
 
 .dropdown__menu li {
@@ -151,7 +194,7 @@ body{
 }
 
 
-/*Services Section CSS*/
+/*Services Section*/
 .services{
     background: #141414;
     display: flex;
@@ -259,4 +302,33 @@ body{
     transform: scale(1.075);
     transition: 0.2s ease-in;
     cursor: pointer;
+}
+
+/*sale-tag keyframes*/
+
+.sale-tag {
+    background-color: #008000;
+    font-size: 0.8em;
+    color: black;
+    margin-left: 10px;
+    display: inline-block;
+    padding: 7px 12px;
+    border-radius: 4px;
+    position: relative;
+    animation: flashsale 1.5s infinite;
+}
+
+@keyframes flashsale {
+    0% {
+        background-color: #ff4c4c;
+        transform: scale(1);
+    }
+    50% {
+        background-color: #ffcc00;
+        transform: scale(1.15);
+    }
+    100% {
+        background-color: #D2042D;
+        transform: scale(1);
+    }
 }
