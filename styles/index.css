@@ -185,7 +185,7 @@ body{
 
 .button:hover{
     background: #4837ff;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
 }
 
 .navbar__links:hover{
