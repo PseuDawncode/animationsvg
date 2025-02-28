@@ -17,13 +17,19 @@
     <nav class="navbar">
         <div class="navbar__container">
             <div class="logo__wrapper">
-                <svg class="piano-logo" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="50" height="30" rx="8" ry="8" fill="#483C32" />
-                    <rect class="key-white" x="2" y="10" width="12" height="20"/>
-                    <rect class="key-white" x="15" y="10" width="12" height="20"/>
-                    <rect class="key-white" x="28" y="10" width="12" height="20"/>
-                    <rect class="key-black" x="10" y="10" width="8" height="12"/>
-                    <rect class="key-black" x="24" y="10" width="8" height="12"/>
+                <!--
+                <svg class="piano-logo" id="piano-logo" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="50" height="30" rx="8" ry="8" fill="#483C32" />
+                        <rect class="key-white" x="2" y="10" width="12" height="20"/>
+                        <rect class="key-white" x="15" y="10" width="12" height="20"/>
+                        <rect class="key-white" x="28" y="10" width="12" height="20"/>
+                        <rect class="key-black" x="10" y="10" width="8" height="12"/>
+                        <rect class="key-black" x="24" y="10" width="8" height="12"/>
+                        <a href="https://www.w3schools.com/graphics/" target="_blank"></a>
+                </svg>
+                -->
+                <svg class="pianosvg" id="piano">
+                    <use xlink:href="images/pianosvg.svg#pianosvg"></use>
                 </svg>
                 <h1 id="navbar__logo">David & The Music</h1>
             </div>
